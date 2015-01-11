@@ -6,7 +6,7 @@
 /*   By: spochez <spochez@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/10 04:48:18 by spochez           #+#    #+#             */
-/*   Updated: 2015/01/11 04:11:52 by spochez          ###   ########.fr       */
+/*   Updated: 2015/01/11 04:56:49 by spochez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 		new = (*f)(lst);
 		res = new;
 		while (lst->next != NULL)
-		{	
+		{
 			new->next = (*f)(lst->next);
 			lst = lst->next;
 			new = new->next;
