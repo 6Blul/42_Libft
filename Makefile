@@ -6,7 +6,7 @@
 #    By: spochez <marvin@42.fr>                     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/06 17:47:13 by spochez           #+#    #+#              #
-#    Updated: 2015/01/13 06:25:57 by spochez          ###   ########.fr        #
+#    Updated: 2015/01/14 01:01:03 by spochez          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -81,7 +81,7 @@ SRC =	$(F)ft_atoi.c		\
 		$(F)ft_lstiter.c	\
 		$(F)ft_lstmap.c		\
 		$(F)ft_strrev.c		\
-		$(F)ft_dec_to_bin.c	\
+		$(F)ft_dec_to_base.c\
 		$(F)ft_dec_to_hexa.c\
 
 OBJ =	ft_atoi.o		\
@@ -148,7 +148,7 @@ OBJ =	ft_atoi.o		\
 		ft_lstiter.o	\
 		ft_lstmap.o		\
 		ft_strrev.o		\
-		ft_dec_to_bin.o	\
+		ft_dec_to_base.o\
 		ft_dec_to_hexa.o\
 
 CFLAGS += -I./includes -Wall -Wextra -Werror -I$(I)
