@@ -6,7 +6,7 @@
 /*   By: spochez <spochez@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/12 02:37:38 by spochez           #+#    #+#             */
-/*   Updated: 2015/02/03 06:51:03 by spochez          ###   ########.fr       */
+/*   Updated: 2015/02/03 23:54:34 by spochez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,11 +45,11 @@ char	*ft_conv_dec_base(int dec, int base)
 	while (dec > 0)
 	{
 		tp += (dec % base);
+		if (dec % base == 0)
+			add = 1;
 		dec /= base;
 		if (dec > 0)
 			tp *= 10;
-		if (dec % base == 0)
-			add = 1;
 	}
 	bin = ft_itoa(tp);
 	bin = ft_strrev(bin);
