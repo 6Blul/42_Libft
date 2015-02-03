@@ -6,7 +6,7 @@
 /*   By: spochez <spochez@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/12 02:37:38 by spochez           #+#    #+#             */
-/*   Updated: 2015/02/03 06:48:10 by spochez          ###   ########.fr       */
+/*   Updated: 2015/02/03 06:48:54 by spochez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char	*ft_complete(char *bin)
 	return (ret);
 }
 
-char	*ft_conv_dec_base(int dec, int base);	
+char	*ft_conv_dec_base(int dec, int base)	
 {
 	char		*bin;
 	uintmax_t	tp;
