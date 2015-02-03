@@ -6,7 +6,7 @@
 /*   By: spochez <spochez@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/12 02:37:38 by spochez           #+#    #+#             */
-/*   Updated: 2015/02/03 06:49:41 by spochez          ###   ########.fr       */
+/*   Updated: 2015/02/03 06:51:03 by spochez          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,22 +37,21 @@ char	*ft_complete(char *bin)
 char	*ft_conv_dec_base(int dec, int base)
 {
 	char		*bin;
-	uintmax_t	tp;
-	int			nb;
+	int			tp;
 	int			add;
 
 	add = 0;
 	tp = 0;
-	while (arg > 0)
+	while (dec > 0)
 	{
-		tp += (arg % base);
-		arg /= base;
-		if (arg > 0)
+		tp += (dec % base);
+		dec /= base;
+		if (dec > 0)
 			tp *= 10;
-		if (arg % base == 0)
+		if (dec % base == 0)
 			add = 1;
 	}
-	bin = ft_uinmaxtoa(tp);
+	bin = ft_itoa(tp);
 	bin = ft_strrev(bin);
 	if (add == 1)
 		bin = ft_complete(bin);
